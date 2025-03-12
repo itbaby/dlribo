@@ -7,10 +7,11 @@ register('zh', () => import('./locales/zh.json'));
 // 初始化配置（默认英文）
 init({
   fallbackLocale: 'en',
-  initialLocale: 'en'
+  initialLocale: 'zh'
 });
 
 // 导出语言切换函数
 export const switchLanguage = (lang: 'en' | 'zh') => {
+  console.log(lang)
   locale.set(lang);
 };
