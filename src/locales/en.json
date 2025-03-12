@@ -1,0 +1,6 @@
+{
+  "greeting": "Hello, {name}!",
+  "button": {
+    "toggle": "Switch to Chinese"
+  }
+}
