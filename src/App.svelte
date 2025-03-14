@@ -1,15 +1,16 @@
 <script lang="ts">
-  
+  /// <reference types="./global" />
   import { switchLanguage } from "./i18n";
   import { _, locale } from "svelte-i18n";
   import { isLoading } from "svelte-i18n";
   import { onMount } from "svelte";
+  import RBHeader from "./RBHeader.svelte";
 
   let userName = "World";
   let currentLang: "en" | "zh" = ($locale as "en" | "zh") || "zh";
 
   onMount(() => {
-    console.log('here')
+    console.log("here");
   });
 </script>
 
@@ -17,15 +18,8 @@
   <p>Loading translations...</p>
 {:else}
   <main>
-
-
-
-
-<div uk-alert>
-    <a href class="uk-alert-close" uk-close></a>
-    <h3>Notice</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>    <h1>{$_("greeting", { values: { name: userName } })}</h1>
+    <RBHeader />
+    <h1>{$_("greeting", { values: { name: userName } })}</h1>
     <input bind:value={userName} placeholder="Enter your name" />
     <button
       on:click={() => {

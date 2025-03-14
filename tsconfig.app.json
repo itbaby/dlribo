@@ -5,7 +5,7 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "resolveJsonModule": true,
-     "allowSyntheticDefaultImports": true, 
+    "allowSyntheticDefaultImports": true,
     /**
      * Typecheck JS in `.svelte` and `.js` files by default.
      * Disable checkJs if you'd like to use dynamic types in JS.
@@ -14,8 +14,24 @@
      */
     "allowJs": true,
     "checkJs": true,
+    "verbatimModuleSyntax": true,
     "isolatedModules": true,
-    "moduleDetection": "force"
+    "moduleDetection": "force",
+    "plugins": [
+      {
+        "name": "typescript-svelte-plugin"
+      }
+    ],
+    "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js",
+    "src/**/*.svelte"
+  ],
+  "exclude": [
+    "src/assets",
+    "src/lib",
+    "src/locales"
+  ]
 }

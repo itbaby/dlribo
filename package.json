@@ -20,8 +20,9 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "@types/uikit": "^3.14.5",
     "animate.css": "^4.1.1",
     "jquery": "^3.7.1",
-    "metismenu": "^3.0.7"
+    "uikit": "^3.23.2"
   }
 }
