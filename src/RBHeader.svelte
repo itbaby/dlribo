@@ -1,8 +1,8 @@
-<nav data-uk-dropnav="boundary: true; stretch: x; flip: false">
+<nav data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small">
   <ul class="uk-subnav">
-    <li class="uk-active"><a href="/">Active</a></li>
+    <li class="uk-active"><a href="/">行业</a></li>
     <li>
-      <a href={'#'}>Parent</a>
+      <a href={'#'}>服务</a>
       <div class="uk-dropdown">
         <ul class="uk-nav uk-dropdown-nav">
           <li class="uk-active"><a href="/">Active</a></li>
@@ -16,7 +16,7 @@
       </div>
     </li>
     <li>
-      <a href={'#'}>Parent</a>
+      <a href={'#'}>创新</a>
       <div class="uk-dropdown">
         <div class="uk-child-width-1-2" data-uk-grid>
           <div>
