@@ -1,36 +1,32 @@
 <script lang="ts">
   /// <reference types="./global" />
-  import { switchLanguage } from "./i18n";
-  import { _, locale } from "svelte-i18n";
   import { isLoading } from "svelte-i18n";
   import { onMount } from "svelte";
+  import aos from "aos";
+  import "./app.css";
+  import "aos/dist/aos.css";
   import RBHeader from "./RBHeader.svelte";
 
-  let userName = "World";
-  let currentLang: "en" | "zh" = ($locale as "en" | "zh") || "zh";
-
   onMount(() => {
-    console.log("here");
+    aos.init();
   });
 </script>
 
 {#if $isLoading}
   <p>Loading translations...</p>
 {:else}
-  <main>
-    <RBHeader />
-    <h1>{$_("greeting", { values: { name: userName } })}</h1>
-    <input bind:value={userName} placeholder="Enter your name" />
-    <button
-      on:click={() => {
-        currentLang = currentLang === "en" ? "zh" : "en";
-        switchLanguage(currentLang);
-      }}
-    >
-      {$_("button.toggle")}
-    </button>
-  </main>
-{/if}
+  
+<div class="uk-text-center uk-grid-collapse uk-grid-match" data-uk-grid>
+    <div class="uk-width-auto@m">
+        <div class="uk-width-1-12 uk-background-muted">Auto</div>
+    </div>
+    <div class="uk-width-expand@m">
+        <div class="uk-background-muted"><RBHeader/></div>
+    </div>
+    <div class="uk-width-auto@m">
+        <div class="uk-width-1-12 uk-background-muted">Auto</div>
+    </div>
+</div>{/if}
 
 <style>
 </style>

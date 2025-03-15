@@ -2,7 +2,7 @@
   <ul class="uk-subnav">
     <li class="uk-active"><a href="/">Active</a></li>
     <li>
-      <a href="javascript:void(0)">Parent</a>
+      <a href={'#'}>Parent</a>
       <div class="uk-dropdown">
         <ul class="uk-nav uk-dropdown-nav">
           <li class="uk-active"><a href="/">Active</a></li>
@@ -16,7 +16,7 @@
       </div>
     </li>
     <li>
-      <a href="javascript:void(0)">Parent</a>
+      <a href={'#'}>Parent</a>
       <div class="uk-dropdown">
         <div class="uk-child-width-1-2" data-uk-grid>
           <div>
