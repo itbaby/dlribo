@@ -1,4 +1,4 @@
-<nav data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small">
+<nav data-uk-sticky data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small">
   <ul class="uk-subnav">
     <li class="uk-active"><a href="/">行业</a></li>
     <li>

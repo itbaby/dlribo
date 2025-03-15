@@ -15,18 +15,25 @@
 {#if $isLoading}
   <p>Loading translations...</p>
 {:else}
-  
-<div class="uk-text-center uk-grid-collapse uk-grid-match" data-uk-grid>
+  <div
+    class="uk-text-center uk-grid-collapse uk-grid-match"
+    data-uk-grid   >
     <div class="uk-width-auto@m">
-        <div class="uk-width-1-12 uk-background-muted">Auto</div>
+      <div class="uk-width-1-12">Auto</div>
     </div>
     <div class="uk-width-expand@m">
-        <div class="uk-background-muted"><RBHeader/></div>
+      <div>
+        <RBHeader />
+      </div>
     </div>
     <div class="uk-width-auto@m">
-        <div class="uk-width-1-12 uk-background-muted">Auto</div>
+      <div class="uk-width-1-12">Auto</div>
     </div>
-</div>{/if}
+  </div>
+{/if}
 
 <style>
+  :global(body){
+    background-image: url(./assets/pexels-photo-323705.jpeg);
+  }
 </style>
