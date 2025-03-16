@@ -15,6 +15,7 @@
     "@tsconfig/svelte": "^5.0.4",
     "@types/aos": "^3.0.7",
     "@types/jquery": "^3.5.32",
+    "less": "^4.2.2",
     "svelte": "^5.20.2",
     "svelte-check": "^4.1.4",
     "svelte-i18n": "^4.0.1",

@@ -1,5 +1,5 @@
-<nav data-uk-sticky data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small">
-  <ul class="uk-subnav">
+<nav data-uk-sticky data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small ">
+  <ul class="uk-subnav uk-padding-small">
     <li class="uk-active"><a href="/">行业</a></li>
     <li>
       <a href={'#'}>服务</a>
@@ -46,3 +46,8 @@
     </li>
   </ul>
 </nav>
+<style lang="less">
+   .uk-subnav li a {
+    font-size: 120%;
+  }
+</style>
