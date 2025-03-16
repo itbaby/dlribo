@@ -1,4 +1,6 @@
-<nav data-uk-sticky data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small ">
+<div data-uk-grid class="uk-grid-match">
+  <div class="uk-width-expand@m">
+   <nav data-uk-sticky data-uk-dropnav="boundary: true; stretch: x; flip: false" class="uk-height-small ">
   <ul class="uk-subnav uk-padding-small">
     <li class="uk-active"><a href="/">行业</a></li>
     <li>
@@ -45,9 +47,33 @@
       </div>
     </li>
   </ul>
+  </nav>
+  </div>
+  <div class="uk-padding-small">
+    <nav data-uk-dropnav>
+    <ul class="uk-subnav">
+        
+        <li class="uk-active">
+            <a href={'#'}>语言 <span data-uk-drop-parent-icon></span></a>
+            <div class="uk-dropdown">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href={"#"}>中文</a></li>
+                    <li><a href={"#"}>英文</a></li>
+                    <li><a href={"#"}>日语</a></li>
+                </ul>
+            </div>
+        </li>
+        
+    </ul>
+
 </nav>
+
+
+  </div>
+</div>
+
 <style lang="less">
-   .uk-subnav li a {
+  .uk-subnav li a {
     font-size: 120%;
   }
 </style>
