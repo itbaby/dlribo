@@ -1,5 +1,6 @@
 https://codepen.io/rexjbull/pen/RwRRezq
-
+npx sv add tailwindcss
+https://flowbite-svelte.com/docs/pages/introduction
 # Svelte + TS + Vite
 
 This template should help get you started developing with Svelte and TypeScript in Vite.

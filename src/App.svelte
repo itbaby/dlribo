@@ -7,6 +7,7 @@
   import "./app.css";
   import "aos/dist/aos.css";
   import RBHeader from "./RBHeader.svelte";
+  import RBFooter from './RBFooter.svelte';
   import Money from './Money.svelte'
   onMount(() => {
     aos.init();
@@ -27,8 +28,7 @@
         <RBHeader />
         <Money/>
 
-        <Money/>
-        
+        <RBFooter/>        
       </div>
     </div>
     <div class="uk-width-auto@m">

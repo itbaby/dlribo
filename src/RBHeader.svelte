@@ -1,8 +1,6 @@
 <script lang="ts">
   import { switchLanguage } from "./i18n";
-
-  let userName = "World";
-
+  import { _ } from "svelte-i18n";
 </script>
 
 <div data-uk-grid class="uk-grid-match">
@@ -13,7 +11,7 @@
       class="uk-height-small"
     >
       <ul class="uk-subnav uk-padding-small">
-        <li class="uk-active"><a href="/">行业</a></li>
+        <li class="uk-active"><a href="/">{$_("index")}</a></li>
         <li>
           <a href={"#"}>服务</a>
           <div class="uk-dropdown">
@@ -67,8 +65,12 @@
           <a href={"#"}>语言 <span data-uk-drop-parent-icon></span></a>
           <div class="uk-dropdown">
             <ul class="uk-nav uk-dropdown-nav">
-              <li class="uk-active"><a href={"#"} on:click={() => switchLanguage('zh')}>中文</a></li>
-              <li><a href={"#"}  on:click={() => switchLanguage('en') }>英文</a></li>
+              <li class="uk-active">
+                <a href={"#"} on:click={() => switchLanguage("zh")}>中文</a>
+              </li>
+              <li>
+                <a href={"#"} on:click={() => switchLanguage("en")}>英文</a>
+              </li>
               <li><a href={"#"}>日语</a></li>
             </ul>
           </div>
